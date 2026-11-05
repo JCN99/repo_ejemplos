@@ -50,3 +50,27 @@ let estado = "rojo";
 // Si el semáforo está verde -> Puedes pasar
 // Si el semáforo está rojo -> Quieto parao
 // Si el semáforo está amarillo -> Cuidado
+
+if (estado === "verde") {
+  console.log("Puedes pasar");
+} else if (estado === "rojo") {
+  console.log("Quieto parao");
+} else if (estado === "amarillo") {
+  console.log("Cuidao");
+} else {
+  console.log("Semáforo estropeado.");
+}
+
+// ¿Pasar faltas?
+
+let hay_alumnos = true;
+let hay_profesor = true;
+
+if (
+  (hay_alumnos === true && hay_profesor === true) ||
+  (hay_alumnos === false && hay_profesor === true)
+) {
+  console.log("Obligatorio pasar faltas.");
+} else if (hay_alumnos === false && hay_profesor === false) {
+  console.log("No obligatorio pasar faltas.");
+}
