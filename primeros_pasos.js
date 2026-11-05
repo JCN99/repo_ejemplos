@@ -29,10 +29,24 @@ if (nota >= 5) {
 
 //IF_ELSE ANIDADO
 
-if (nota < 5) {
+let nota2 = 5;
+
+if (nota2 < 5) {
   console.log("Suspenso");
-} else if (nota === 5) {
+} else if (nota2 === 5) {
   console.log("Aprobado");
-} else if (nota === 6) {
+} else if (nota2 === 6) {
   console.log("Bien");
+} else if (nota2 === 7 || nota2 === 8) {
+  console.log("Notable");
+} else {
+  console.log("Sobresaliente");
 }
+
+// Comprobar estado del semáforo y dar un aviso al conductor
+
+let estado = "rojo";
+
+// Si el semáforo está verde -> Puedes pasar
+// Si el semáforo está rojo -> Quieto parao
+// Si el semáforo está amarillo -> Cuidado
