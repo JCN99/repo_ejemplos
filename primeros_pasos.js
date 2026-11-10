@@ -74,3 +74,22 @@ if (
 } else if (hay_alumnos === false && hay_profesor === false) {
   console.log("No obligatorio pasar faltas.");
 }
+
+// Dentro de la condición: && -> y
+// || -> o
+
+// Para optar a beca: calificion >= 7 y faltas < 20 %
+
+let nombre = "Cayetano";
+let calificacion = 8;
+let faltas = 18;
+let incidencias = 3;
+if (
+  (calificacion >= 7 && faltas < 20) ||
+  (calificacion >= 7 && incidencias === 0)
+) {
+  // El alumno [nombre] opta a beca.
+  console.log("El alumno " + nombre + " opta a beca.");
+} else {
+  console.log("El alumno " + nombre + " NO opta a beca.");
+}
